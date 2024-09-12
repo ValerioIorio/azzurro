@@ -19,7 +19,6 @@ public class Controller {
     @GetMapping("/verde")
     public Object getVerde() throws InterruptedException {
         Thread.sleep(randomGen(4,6) * 1000L);
-
         return Map.of("nome", "Verde");
     }
 
